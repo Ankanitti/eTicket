@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+{% block title %}
+    {{ parent() }} - Create E-Ticket
+{% endblock %}
+{% block content %}
+
+    <h1>Create E-Ticket</h1>
+
+    <form id="loginForm" role="form" method="post">
+        <div class="form-group">
+            <div class="input-group">
+                <div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div>
+                <input type="text" class="form-control" id="email" email="email" placeholder="email">
+            </div>
+
+        </div>
+        <button type="submit" class="btn btn-default">Create E-ticket</button>
+    </form>
+
+{% endblock %}
